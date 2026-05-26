@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- 카테고리 색상 인디케이터 -->
+        <View
+            android:id="@+id/categoryColorIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/category_color_square" />
+
+        <!-- 카테고리 이름 -->
+        <TextView
+            android:id="@+id/categoryNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="외식"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <!-- 카테고리 금액 -->
+        <TextView
+            android:id="@+id/categoryAmountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45,000원"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

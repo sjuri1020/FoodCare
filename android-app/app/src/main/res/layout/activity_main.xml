@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollSection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/topBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:background="@drawable/topbar"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:paddingTop="16dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 님 반가워요!"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="26sp"
+                        android:paddingTop="8dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/bell"/>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        app:layout_constraintBottom_toTopOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView"
+                        app:layout_constraintStart_toEndOf="@+id/imageView"
+                        app:layout_constraintTop_toTopOf="@+id/imageView"
+                        app:srcCompat="@drawable/red_circle" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                        app:layout_constraintStart_toStartOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/bannerPager"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:clipToPadding="true"
+                android:clipChildren="true"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:overScrollMode="never"
+                app:layout_constraintTop_toBottomOf="@+id/topBarLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:dotsColor="#D0D0D0"
+                app:selectedDotColor="#E8DB6B"
+                app:dotsSize="8dp"
+                app:dotsSpacing="6dp"
+                app:layout_constraintTop_toBottomOf="@+id/bannerPager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <GridLayout
+                android:id="@+id/gridButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:columnCount="4"
+                android:padding="16dp"
+                android:rowCount="4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dots_indicator">
+
+                <!-- Row 1 -->
+                <!-- Column 1: 식자재 관리 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnFoodMgmt"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="식자재 관리"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_frige" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="식자재 관리"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 2: 식자재레시피 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnRecipeSearch"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="레시피 검색"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_foodsearch" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="레시피 검색"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 3: 외부검색 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnExpenseAnalysis"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="소비패턴"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_expense_analysis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="소비패턴"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 4: 냉장고 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnExpense"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="가계부"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_expense" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="가계부"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Row 2 -->
+                <!-- Column 1: 개인정보 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnUserInfo"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="개인정보"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_information" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="개인정보"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 2: 구성원 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnMembers"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="구성원"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_member" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="구성원"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 3: 음식검색 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnAddRecipe"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="내 레시피 등록"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_addrecipe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="내 레시피 등록"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <!-- Column 4: 설정 -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="24dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnSetting"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="설정"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_butt_setting" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="설정"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </GridLayout>
+
+
+            <TextView
+                android:id="@+id/todayMealTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="16dp"
+                android:text="오늘 밥, 이건 어때?"
+                android:textColor="#D6C959"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gridButtons" />
+
+            <LinearLayout
+                android:id="@+id/foodRecommendationsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/todayMealTitle"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <!-- 카드가 코드로 동적으로 추가됩니다 -->
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

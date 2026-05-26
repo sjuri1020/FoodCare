@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7FBFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- 툴바/상단바 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_left"
+                android:contentDescription="Back"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/tvRecipeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="레시피 이름"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- 대표 이미지 -->
+        <ImageView
+            android:id="@+id/ivRecipeImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:src="@drawable/no_img" />
+
+
+        <!-- 요약 -->
+        <TextView
+            android:id="@+id/tvSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="한줄 요약"
+            android:textSize="16sp"
+            android:textColor="#555"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 내가 가진/없는 재료 -->
+        <TextView
+            android:id="@+id/tvIngredientInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내가 가진 재료: ..."
+            android:textSize="15sp"
+            android:layout_marginTop="14dp"/>
+
+        <!-- 모든 정보 출력 (시간, 난이도, 카테고리, 알레르기, 질병 등) -->
+        <TextView
+            android:id="@+id/tvAllInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="15sp"
+            android:textColor="#333"/>
+
+        <!-- 조리법 -->
+        <TextView
+            android:id="@+id/tvRecipeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="조리법"
+            android:layout_marginTop="18dp"
+            android:textSize="16sp"/>
+
+        <!-- 건강 안내 -->
+        <TextView
+            android:id="@+id/tvHealthInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#B71C1C"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

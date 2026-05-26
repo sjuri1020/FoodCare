@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@drawable/card_bg"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="16dp">
+
+    <!-- 순위 원 -->
+    <TextView
+        android:id="@+id/rankCircle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rank_circle"
+        android:textSize="14sp" />
+
+    <!-- 이름 및 구매 횟수 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/ingredientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계란"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/frequencyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월 15회 구매"
+            android:textSize="14sp"
+            android:textColor="#777777" />
+    </LinearLayout>
+
+    <!-- 쇼핑리스트 추가 버튼 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="쇼핑리스트 추가"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:minHeight="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/button_green_slim"
+        android:backgroundTint="@null" />
+</LinearLayout>

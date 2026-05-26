@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_rounded_card"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical">
+
+    <!-- 체크 아이콘 -->
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_check_circle"
+        android:contentDescription="체크됨" />
+
+    <!-- 이름, 단위, 구매 텍스트 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계란"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/itemFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="월 15회 구매"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_freq_tag"
+            android:textSize="12sp"
+            android:textColor="#5265CC" />
+    </LinearLayout>
+
+    <!-- 수량 조절 버튼 영역 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_quantity_container"
+        android:padding="0dp">
+
+        <!-- - 버튼 -->
+        <TextView
+            android:id="@+id/minusButton"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="@drawable/bg_minus_button" />
+
+        <!-- 수량 텍스트 -->
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#333333"
+            android:textSize="14sp"
+            android:background="#F5F5F5"/>
+
+        <!-- + 버튼 -->
+        <TextView
+            android:id="@+id/plusButton"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="+"
+            android:textSize="14sp"
+            android:textColor="#333333"
+            android:background="@drawable/bg_plus_button" />
+    </LinearLayout>
+
+    <!-- 삭제 버튼 -->
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_trash"
+        android:contentDescription="삭제" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_500">#0066FF</color>
+    <color name="text_dark">#222222</color>
+    <color name="text_gray">#777777</color>
+    <!-- 등록 버튼 색상 -->
+    <color name="register_green">#00C471</color>
+    <color name="register_green_pressed">#00A55E</color>
+    <!-- 에러 색상 -->
+    <color name="error_red">#EF4444</color>
+
+    <!-- 기본 색상 -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="gray_700">#374151</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 앱 테마 색상 -->
+    <color name="green_700">#FF388E3C</color>
+    <color name="green_500">#FF4CAF50</color>
+    <color name="green_300">#FF81C784</color>
+
+    <!-- 배경 색상 -->
+    <color name="your_background_color">#FF4CAF50</color>
+    <color name="top_bar">#323232</color>
+
+    <!-- 오렌지 색상 -->
+    <color name="orange">#FFFF9800</color>
+    <color name="orange_500">#FFFF9800</color>
+    <color name="orange_700">#FFF57C00</color>
+
+    <!-- 상태 색상 -->
+    <color name="red">#FFF44336</color>
+    <color name="yellow">#FFFFC107</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="gray">#FF9E9E9E</color>
+    <color name="light_gray">#FFF5F5F5</color>
+
+    <!-- 텍스트 색상 -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FFBDBDBD</color>
+
+</resources>

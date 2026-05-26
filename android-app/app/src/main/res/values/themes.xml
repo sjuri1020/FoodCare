@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 기본 테마 -->
+    <style name="Base.Theme.FoodCare" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- 상태 바 색상 -->
+        <item name="android:statusBarColor">@color/your_background_color</item>
+
+        <!-- ✅ 한글 렌더링 문제 해결 요소들 -->
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:textColorHint">#888888</item>
+        <item name="android:editTextBackground">@android:color/transparent</item>
+
+        <!-- ✅ 텍스트 입력창에서 커서, 텍스트 색상 등 명시적 지정 -->
+        <item name="colorOnPrimary">#000000</item>
+        <item name="android:textCursorDrawable">@null</item> <!-- 커서가 안 보일 경우 대비 -->
+    </style>
+
+    <!-- 앱 전체 테마 -->
+    <style name="Theme.FoodCare" parent="Base.Theme.FoodCare" />
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp">
+
+    <!-- 왼쪽 세로 막대 -->
+    <View
+        android:id="@+id/categoryIndicator"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="#00E676"
+        android:layout_marginEnd="12dp"/>
+
+    <!-- 가운데 영역 (항목명 + 날짜 + 메모) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 항목명 -->
+        <TextView
+            android:id="@+id/itemNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="커피"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <!-- 날짜 -->
+        <TextView
+            android:id="@+id/itemDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025-05-31"
+            android:textSize="14sp"
+            android:textColor="#999999"
+            android:layout_marginTop="2dp" />
+
+        <!-- 메모 (추가됨) -->
+        <TextView
+            android:id="@+id/itemMemoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메모 예시"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 금액 -->
+    <TextView
+        android:id="@+id/itemAmountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4,500원"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 상단 툴바 -->
+    <include
+        layout="@layout/toolbar_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 본문 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 안내 문구 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입 시 입력한 정보를 입력하세요"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- 아이디 입력 -->
+        <EditText
+            android:id="@+id/etFindLoginId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 이름 입력 -->
+        <EditText
+            android:id="@+id/etFindName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 구글 이메일 + 인증번호 받기 버튼 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etFindEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="이메일 주소"
+                android:inputType="textEmailAddress"
+                android:paddingEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증번호 받기"
+                android:textSize="12sp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp" />
+        </LinearLayout>
+
+        <!-- 인증번호 입력 -->
+        <EditText
+            android:id="@+id/etVerifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="인증번호 (6자리 숫자)"
+            android:inputType="number"
+            android:maxLength="6"
+            android:layout_marginBottom="24dp" />
+
+        <!-- 비밀번호 찾기 버튼 -->
+        <Button
+            android:id="@+id/btnFindPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:backgroundTint="#BDBDBD"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</LinearLayout>
