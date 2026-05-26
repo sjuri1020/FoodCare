@@ -48,7 +48,7 @@ Android와 FastAPI 기반의 식자재 관리 및 맞춤형 레시피 추천 서
 ## 📷 Screenshots
 
 ### 🏠 메인 홈 화면
-<img width="230" height="1079" alt="image" src="https://github.com/user-attachments/assets/da3c41a2-8d04-4648-8cda-3d9ba9aee0e2" />
+<img width="511" height="800" alt="image" src="https://github.com/user-attachments/assets/da3c41a2-8d04-4648-8cda-3d9ba9aee0e2" />
 
 
 ### 🥬 식자재 관리 기능
