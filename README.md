@@ -67,6 +67,10 @@ Android · FastAPI 기반 식자재 관리 및 맞춤형 레시피 추천 서비
 <img src="https://github.com/user-attachments/assets/e560e184-1aa9-4db6-97d9-21e0dbabaf98" width="200"/>
 
 ---
+## 🎥 Demo Video
+- https://youtu.be/fXGeZa_b1co
+
+---
 
 ## 📅 개발 기간
 2025.03 ~ 2025.06
