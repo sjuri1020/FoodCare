@@ -46,7 +46,8 @@ Android와 FastAPI 기반의 식자재 관리 및 맞춤형 레시피 추천 서
 ---
 
 ## 📷 실행 화면
-(스크린샷 넣기)
+<img width="511" height="1079" alt="image" src="https://github.com/user-attachments/assets/334cc955-9252-4cf6-b24e-efc75b00da85" />
+
 
 ---
 
